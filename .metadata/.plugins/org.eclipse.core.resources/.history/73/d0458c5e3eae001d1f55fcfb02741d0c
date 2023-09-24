@@ -1,0 +1,21 @@
+package programPractice;
+
+import java.util.Scanner;
+
+public class ReverseNumbers {
+
+	public static void main(String[] args) {
+		//taking input from user
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the Number:");
+		int num= sc.nextInt();
+		
+		//logic for reversing number
+		int rev=0;
+		rev= rev*10 + num%10;
+		num= num/10;
+		System.out.println("Reverse number is :"+rev);
+
+	}
+
+}

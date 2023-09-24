@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;test.RemoveDuplicateArrayEl.java&apos; to &apos;RemoveDuplicateArrayUsingForLoop.java&apos;&#x0D;&#x0A;- Original project: &apos;Java15ProgrammsPractice&apos;&#x0D;&#x0A;- Original element: &apos;test.RemoveDuplicateArrayEl.java&apos;&#x0D;&#x0A;- Renamed element: &apos;test.RemoveDuplicateArrayUsingForLoop.java&apos;" description="Rename compilation unit &apos;RemoveDuplicateArrayEl.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;test{RemoveDuplicateArrayEl.java" name="RemoveDuplicateArrayUsingForLoop.java" references="false" stamp="1687385070715" version="1.0"/>
+</session>

@@ -1,0 +1,62 @@
+package test;
+
+import java.util.HashSet;
+
+//Find the contiguous sub array within an array which has the largest sum.
+
+public class SubArrayLongestSum {
+
+	public static int findMaxSubarraySum(int arr[]) {
+//1st approach
+        //Assign first value of an array
+//        int maxSum = arr[0];
+//        int sum = arr[0];
+//
+//        //Traverse an array
+//        for(int i = 1; i < arr.length; i++) {
+//            
+//            if(sum < 0)
+//            {
+//               sum = arr[i];
+//            } 
+//            else 
+//            {
+//               sum = sum + arr[i];
+//            }
+//             
+//            //get maxsum
+//            maxSum = Math.max(sum, maxSum);
+//       }
+//      
+//        return maxSum;
+  
+	//2nd approach
+        
+		if (arr == null || arr.length == 0)
+		{
+			throw new IllegalArgumentException("Input array should not be empty ");
+		}
+			int maxEndingHere = arr[0];
+			int maxSoFar = arr[0];
+			
+			for( int i = 1; i<arr.length; i++)
+			{
+				maxEndingHere = Math.max(arr[i], maxEndingHere + arr[i]);
+				System.out.println(maxEndingHere);
+				maxSoFar = Math.max(maxSoFar, maxEndingHere);
+				System.out.println(maxSoFar);
+				
+			}
+			return maxSoFar;
+		
+	}
+
+   public static void main(String[] args) {
+
+       int arr[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4 };
+       int result = findMaxSubarraySum(arr);
+
+       System.out.println(result);
+
+   }
+}

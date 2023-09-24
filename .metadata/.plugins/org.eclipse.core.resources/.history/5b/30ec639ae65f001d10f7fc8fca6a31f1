@@ -1,0 +1,29 @@
+package test;
+
+
+class Abc
+{
+	private int a; //instance variable
+	private int b;
+	
+	public int add(int a,int b) //local variable
+	{   
+		this.a=a;
+		this.b=b;
+		
+		return a+b;
+		
+	}
+	
+}
+public class EncapsulationDemo {
+
+	public static void main(String[] args) {
+		
+		Abc obj =new Abc();
+		obj.add(5, 7);
+		
+		
+	}
+
+}

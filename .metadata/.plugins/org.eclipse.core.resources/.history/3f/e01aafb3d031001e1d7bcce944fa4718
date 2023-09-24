@@ -1,0 +1,42 @@
+package test;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class LenghtOfLogsestSubString {
+	
+	public static int lenghtOfLongestSubString(String s) 
+	{	
+		int strlen= s.length();
+		int maxCount = 0;
+		int i = 0,  j = 0;
+		
+		Set <Character> st = new HashSet<>();
+		 while(i < strlen && j < strlen) 
+		 {
+			 if(!st.contains(s.charAt(j)) )
+			 {
+				 st.add(s.charAt(j));
+				 j++;
+				 maxCount = Math.max(maxCount, j-i);
+			 }
+			 else 
+			 {
+				 st.remove(s.charAt(i));
+				 i++;
+			 }
+		 }
+		 	return maxCount;
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		String s = "abcabceh";
+		int len=lenghtOfLongestSubString(s);
+		System.out.println("Length of longest SubString is :" +len);
+
+	}
+
+}

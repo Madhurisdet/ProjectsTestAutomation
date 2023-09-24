@@ -1,0 +1,65 @@
+package basePackage;
+
+import java.time.Duration;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import pageFactory.ALLHomePageOptions;
+import pageFactory.AmazonHomePageFactory;
+import pageFactory.AmazonProductPage;
+import pageFactory.HelloSignInAccountHomePage;
+
+public class InitializingDriver {
+	public static WebDriver driver;
+	
+	public static void main(String[] args) throws Exception {
+		String drpdownProdType = "Books";
+		String searchText = "books for kids";
+		String productTitleToSearch = "How to Catch a Dinosaur";
+		String amazonHomepageHeader = "New Releases";
+		String emailidh= "madhuri@123gmail.com";
+		String anyDepartmentName = "Computers & Accessories";
+		
+		driver = new ChromeDriver();
+		driver.get("https://www.amazon.com");
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
+		driver.manage().window().maximize();
+		
+		//Home Page 
+		AmazonHomePageFactory amazonhomepageobj = new AmazonHomePageFactory(driver);
+		amazonhomepageobj.searchProducTypeDropdown(drpdownProdType);
+		amazonhomepageobj.searchTextIntoSearchBox(searchText);
+		amazonhomepageobj.selectProductfromResult(productTitleToSearch);
+		Thread.sleep(2000);
+		amazonhomepageobj.allHeadersOfPage(amazonHomepageHeader);
+		Thread.sleep(2000);
+		
+		//Product details Page
+		AmazonProductPage productdetailsObj = new AmazonProductPage(driver);
+		List<String> productDetailsList = new LinkedList<>
+		(Arrays.asList("Publisher","Language","Language","ISBN-10","ISBN-13","Reading age","Lexile measure ","Grade level ‏"));
+		for(Map.Entry prodObj : productdetailsObj.ProductDetails1(productDetailsList).entrySet())
+		{
+			System.out.println(prodObj.getKey()+"--->"+prodObj.getValue());
+		}
+		
+		
+		//All Options Click Home Page
+		ALLHomePageOptions allhomepageButton = new ALLHomePageOptions(driver);
+		allhomepageButton.allOptionHomePage();
+		Thread.sleep(2000);
+		allhomepageButton.selectAnyDepartment(anyDepartmentName); 
+		Thread.sleep(2000);
+		
+		
+
+		//Hello SignIn Account Home Page
+		HelloSignInAccountHomePage helloSignInAccObj = new HelloSignInAccountHomePage(driver);
+		helloSignInAccObj.HelloSignInAccount(emailidh);
+	}
+}

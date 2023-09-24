@@ -1,0 +1,785 @@
+Manifest-Version: 1.0
+Bundle-Description: YAML 1.1 parser and emitter for Java
+Automatic-Module-Name: org.yaml.snakeyaml
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.yaml.snakeyaml
+Built-By: default
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %bundleVendor
+Import-Package: org.yaml.snakeyaml;version="[1.27,2)",org.yaml.snakeya
+ ml.composer;version="[1.27,2)",org.yaml.snakeyaml.emitter;version="[1
+ .27,2)",org.yaml.snakeyaml.error;version="[1.27,2)",org.yaml.snakeyam
+ l.events;version="[1.27,2)",org.yaml.snakeyaml.introspector;version="
+ [1.27,2)",org.yaml.snakeyaml.nodes;version="[1.27,2)",org.yaml.snakey
+ aml.parser;version="[1.27,2)",org.yaml.snakeyaml.reader;version="[1.2
+ 7,2)",org.yaml.snakeyaml.resolver;version="[1.27,2)",org.yaml.snakeya
+ ml.scanner;version="[1.27,2)",org.yaml.snakeyaml.serializer;version="
+ [1.27,2)",org.yaml.snakeyaml.tokens;version="[1.27,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: org.yaml.snakeyaml;version="1.27.0";uses:="org.yaml.sn
+ akeyaml.constructor,org.yaml.snakeyaml.events,org.yaml.snakeyaml.intr
+ ospector,org.yaml.snakeyaml.nodes,org.yaml.snakeyaml.representer,org.
+ yaml.snakeyaml.resolver,org.yaml.snakeyaml.serializer",org.yaml.snake
+ yaml.composer;version="1.27.0";uses:="org.yaml.snakeyaml,org.yaml.sna
+ keyaml.error,org.yaml.snakeyaml.nodes,org.yaml.snakeyaml.parser,org.y
+ aml.snakeyaml.resolver",org.yaml.snakeyaml.constructor;version="1.27.
+ 0";uses:="org.yaml.snakeyaml,org.yaml.snakeyaml.composer,org.yaml.sna
+ keyaml.error,org.yaml.snakeyaml.introspector,org.yaml.snakeyaml.nodes
+ ",org.yaml.snakeyaml.emitter;version="1.27.0";uses:="org.yaml.snakeya
+ ml,org.yaml.snakeyaml.error,org.yaml.snakeyaml.events",org.yaml.snake
+ yaml.env;version="1.27.0";uses:="org.yaml.snakeyaml.constructor,org.y
+ aml.snakeyaml.nodes",org.yaml.snakeyaml.error;version="1.27.0",org.ya
+ ml.snakeyaml.events;version="1.27.0";uses:="org.yaml.snakeyaml,org.ya
+ ml.snakeyaml.error",org.yaml.snakeyaml.extensions.compactnotation;ver
+ sion="1.27.0";uses:="org.yaml.snakeyaml.constructor,org.yaml.snakeyam
+ l.nodes",org.yaml.snakeyaml.introspector;version="1.27.0",org.yaml.sn
+ akeyaml.nodes;version="1.27.0";uses:="org.yaml.snakeyaml,org.yaml.sna
+ keyaml.error",org.yaml.snakeyaml.parser;version="1.27.0";uses:="org.y
+ aml.snakeyaml.error,org.yaml.snakeyaml.events,org.yaml.snakeyaml.read
+ er,org.yaml.snakeyaml.scanner",org.yaml.snakeyaml.reader;version="1.2
+ 7.0";uses:="org.yaml.snakeyaml.error",org.yaml.snakeyaml.representer;
+ version="1.27.0";uses:="org.yaml.snakeyaml,org.yaml.snakeyaml.introsp
+ ector,org.yaml.snakeyaml.nodes",org.yaml.snakeyaml.resolver;version="
+ 1.27.0";uses:="org.yaml.snakeyaml.nodes",org.yaml.snakeyaml.scanner;v
+ ersion="1.27.0";uses:="org.yaml.snakeyaml.error,org.yaml.snakeyaml.re
+ ader,org.yaml.snakeyaml.tokens",org.yaml.snakeyaml.serializer;version
+ ="1.27.0";uses:="org.yaml.snakeyaml,org.yaml.snakeyaml.emitter,org.ya
+ ml.snakeyaml.error,org.yaml.snakeyaml.nodes,org.yaml.snakeyaml.resolv
+ er",org.yaml.snakeyaml.tokens;version="1.27.0";uses:="org.yaml.snakey
+ aml,org.yaml.snakeyaml.error",org.yaml.snakeyaml.util;version="1.27.0
+ "
+Bundle-Name: %bundleName
+Bundle-Version: 1.27.0.v20201111-1638
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_212
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectBlockMappingValue.class
+SHA-256-Digest: aM3uHirKPUf0d3ozIYtfrzEZ4oHX5be581MfZ8ggKj4=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseBlockNode.class
+SHA-256-Digest: wTzjuUKkaFG9JKG0mJXiQqzleUiwT2ZtfuXBRycRQHA=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectBlockMappingSimpleValue
+ .class
+SHA-256-Digest: qEIHOytJe2SQbhYNbqZseq/3pwUFVi4DiRTCWBP69Vk=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectBlockSequenceItem.class
+SHA-256-Digest: f6Kd9d/DH9BQtfYujhbbqAd1soFLE6rVWn2vLWrmTMc=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectDocumentEnd.class
+SHA-256-Digest: RJ9CM2NUk6+HC/BEX6j4XgOFM//bvoNenkcVTi/Ss4M=
+
+Name: org/yaml/snakeyaml/Yaml$3.class
+SHA-256-Digest: 6yCB+3j7wwHiAxVCJfH2Ve7U/Y3uR1WvTrJDAzbl8ps=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseBlockSequenceEntry.cla
+ ss
+SHA-256-Digest: /3F9Vw9dhO8I8h+bHE4N9daBlo/WbVP+D3xI688H5cg=
+
+Name: org/yaml/snakeyaml/util/ArrayUtils.class
+SHA-256-Digest: YpiI/2NsMzj7s5HX1YqnEakpic2gEr9cRblu9e6Ci74=
+
+Name: org/yaml/snakeyaml/tokens/Token$ID.class
+SHA-256-Digest: kGm5kWKFfpzbZ7JJG6k9VRBIKv05Q99E5vwa4rspIy8=
+
+Name: org/yaml/snakeyaml/reader/StreamReader.class
+SHA-256-Digest: mPtVx3Mcb5HTTY6iGLQhjRhsgMsTp67AO/OCCwE+DkY=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentList.cla
+ ss
+SHA-256-Digest: w/eXqmSV3hJJXoZsRf9LWT4ORieScoozwF56z9d4JrQ=
+
+Name: org/yaml/snakeyaml/tokens/CommentToken.class
+SHA-256-Digest: qqHRIV2IX4JVm6lP6Y5lEIKhdAQuaVfAlht9R+WQ2yo=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlOmap
+ .class
+SHA-256-Digest: ArES3Y6Qfmau6lmtgGqwMvErF0MVz4yMxCYRtjzJN9c=
+
+Name: org/yaml/snakeyaml/tokens/TagTuple.class
+SHA-256-Digest: AxnLG9KFV56CSMBG+hG3Ex8TYXq5bkL1bP8lrQMqYR4=
+
+Name: org/yaml/snakeyaml/tokens/KeyToken.class
+SHA-256-Digest: 6+X87RvjYH0AQBg1TQnl1FVNTx6Y5cQS+/XzoqRivKE=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor.class
+SHA-256-Digest: cZC5SGmPdIHnfsuZCtXWSZ5D7RbPVqTjP0Fa1A82Eq8=
+
+Name: org/yaml/snakeyaml/DumperOptions.class
+SHA-256-Digest: Hi0OpluqedYvKtaG4C5KydseBbkoki4GJzUjYQ+O/cg=
+
+Name: org/yaml/snakeyaml/tokens/BlockSequenceStartToken.class
+SHA-256-Digest: w/HmoQAC6VGrGGxY4LFWd7WvtMzWewqiMubgPvHqK44=
+
+Name: org/yaml/snakeyaml/events/DocumentEndEvent.class
+SHA-256-Digest: QTie6MK7ugM1tWE/qXpDrfQ725EzYaDGdM62u8EpDo4=
+
+Name: org/yaml/snakeyaml/events/NodeEvent.class
+SHA-256-Digest: GMvPO/lawE8N+xV2y7hufZM0hnpLmbAEaeQF+VbCQf0=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlPair
+ s.class
+SHA-256-Digest: 5zEc79wceLT3j4np0Y/D/n+2V3rs241XkpkhvuLtUnE=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseStreamStart.class
+SHA-256-Digest: Ed/3nyHY/jc2ATpI301I24JYYxDMuWIKVSl7B6QTCcE=
+
+Name: org/yaml/snakeyaml/emitter/ScalarAnalysis.class
+SHA-256-Digest: yhEyoSD0effr9vsqHdqBo5XbYIRZ9pBr7pJnI/pxAME=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseFlowSequenceEntry.clas
+ s
+SHA-256-Digest: YuUFrTzvouYy2YM8GyPpDI9J/caNfdvVdZJDR/cmJH8=
+
+Name: org/yaml/snakeyaml/tokens/FlowSequenceEndToken.class
+SHA-256-Digest: B4Ih3nnYcdw760KmSH7PM0VHRPWsrvYE/AHTNLGBoZE=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectFirstBlockMappingKey.cl
+ ass
+SHA-256-Digest: WY3p0UplWf8hIVA+L0U2I0JbfKdWHpjknHDmRd5vETg=
+
+Name: org/yaml/snakeyaml/extensions/compactnotation/CompactConstructor
+ .class
+SHA-256-Digest: ORpPhiwKNoVaJjbmXc/H6YX7Xyke35q6K0CP+Psim7U=
+
+Name: org/yaml/snakeyaml/introspector/FieldProperty.class
+SHA-256-Digest: DRBqMURjHReT+n4Ohxc8ElPzklGM3AHXRqfh74fyaCs=
+
+Name: org/yaml/snakeyaml/Yaml$NodeIterable.class
+SHA-256-Digest: Tz54CXFFsRmyBFZWYQ9jAcnxm/qoW1JRCqKURB+0cws=
+
+Name: org/yaml/snakeyaml/representer/BaseRepresenter.class
+SHA-256-Digest: Jy2Z/3FftW9PrgiTHlFWNur2FU35vu/Onz2i12mTxNM=
+
+Name: org/yaml/snakeyaml/constructor/Constructor$ConstructMapping.clas
+ s
+SHA-256-Digest: 3ode0mfzzcVnngCONNn8PhiMTPD1D1fH/+JxL8o8utE=
+
+Name: org/yaml/snakeyaml/scanner/Constant.class
+SHA-256-Digest: EoesjK/fp0dJU8NKJFhlOS7MRPOBTVuk3gLyLKICSZY=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseIndentlessSequenceEntr
+ y.class
+SHA-256-Digest: g6LpTi6ZK84/tX2ZsapMO/gWa0YcC+xcWSzcqPEh0f4=
+
+Name: org/yaml/snakeyaml/nodes/Tag.class
+SHA-256-Digest: pF3ZF09569PO1/eH/44tPDnV2tedQDgM0G9YkfZtVaw=
+
+Name: org/yaml/snakeyaml/util/PlatformFeatureDetector.class
+SHA-256-Digest: yy4HIzeBzoERk9amSon5XBnCK9q1bh1d0zZb7RxWilc=
+
+Name: org/yaml/snakeyaml/LoaderOptions.class
+SHA-256-Digest: k8xOClZGF7dTZzJLAIubTNTgyDnnIdnEJGDEl1O3itQ=
+
+Name: org/yaml/snakeyaml/constructor/Constructor$ConstructYamlObject.c
+ lass
+SHA-256-Digest: WWdcCf59j05txMS4oUphqiAS8yPrs8hZpBJ9lKgTu4s=
+
+Name: org/yaml/snakeyaml/external/com/google/gdata/util/common/base/Es
+ caper.class
+SHA-256-Digest: 0JUVhJ5ggyB6z4lyArwP3LhlOx1vw9vPEzwVJIZPIS4=
+
+Name: org/yaml/snakeyaml/resolver/ResolverTuple.class
+SHA-256-Digest: mF3v+/EaFwfuQcBwmWgPJFfdQVQZc7xumyUUyCLrgtc=
+
+Name: org/yaml/snakeyaml/events/CollectionStartEvent.class
+SHA-256-Digest: zt6c2hU6nDB/Rphxp8eE0t5gG5ZzmF4pQfVrNXJKBLU=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectFirstDocumentStart.clas
+ s
+SHA-256-Digest: ehLQQOy6P5r86kcWnszurhIHzU3x9vWdVy/MbP70Ipg=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseBlockMappingFirstKey.c
+ lass
+SHA-256-Digest: W2sRz5KYksurv1VI+cx6ZcRm9I3Z+UT7kUUm2ABV/WQ=
+
+Name: org/yaml/snakeyaml/DumperOptions$FlowStyle.class
+SHA-256-Digest: fJKfnKVgcVpij3rC/7RFJjb11y21K7wsZzgzJMq8Amk=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseFlowMappingEmptyValue.
+ class
+SHA-256-Digest: tkbSg+GOHt3yeGUfvazrE0bJB7GFy0XYjhbaHmgXWAM=
+
+Name: org/yaml/snakeyaml/parser/Production.class
+SHA-256-Digest: GTyM3AqsYbtVXCKZc6Eye/1Oq3z+r9yd9uodmyO2Llk=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectDocumentStart.class
+SHA-256-Digest: YYsfDK+MK8OZFJ6PWwo2QskjVjyZ7ksYML1dH6S3jLg=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$1.class
+SHA-256-Digest: UnAXhKF8wCPJFxGo4HiiGegL23KH++PXzf/y7narIBE=
+
+Name: org/yaml/snakeyaml/tokens/FlowMappingEndToken.class
+SHA-256-Digest: jlFMldzsO+ZUbH2aw+ZbB98Ahp46WNcpd/EbUMW5viU=
+
+Name: org/yaml/snakeyaml/introspector/PropertyUtils$1.class
+SHA-256-Digest: otggZfIKYh7xvwSAaZR94DqM7wA3R3leQvAv3ipm3Kk=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.yaml.snakeyaml/pom.
+ properties
+SHA-256-Digest: bEv1s5ZmLloxH83G2gM8WvEr5/wMCIkjOm4E1cx8T5c=
+
+Name: org/yaml/snakeyaml/reader/UnicodeReader.class
+SHA-256-Digest: nap49YVwgTlhVyUMNraHY1saROmB6FtW3lFpxCxe/44=
+
+Name: org/yaml/snakeyaml/introspector/MethodProperty.class
+SHA-256-Digest: W7V5R2XM7VjbLWrexKywihIeMRkIuFCVPXlfW37p7QM=
+
+Name: org/yaml/snakeyaml/Yaml$SilentEmitter.class
+SHA-256-Digest: dZ5phoEpzipnC6+fuozO99QuxOmxC9TWYhHutaTc2pY=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl.class
+SHA-256-Digest: rqpf5phKBWUHdQNbWgwLT5wIMcssV5ec8sg7KD2JqnE=
+
+Name: about_files/APACHE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: org/yaml/snakeyaml/external/com/google/gdata/util/common/base/Pe
+ rcentEscaper.class
+SHA-256-Digest: nDKsdHhriH7pu+ihfXy2C/H9Rd5PkO7D9s9SBtvdeEE=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseImplicitDocumentStart.
+ class
+SHA-256-Digest: BLCmhjOLSqbaofuJTKQQPosVlhc4zbu5GBcUaKwt5SE=
+
+Name: org/yaml/snakeyaml/emitter/EmitterState.class
+SHA-256-Digest: oDe1t5tISuDdHYio42U3ZCzS7wwkBFYWL/AU4hS7NEA=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentNumber.c
+ lass
+SHA-256-Digest: 2CUZ+9xD1yz86npl4kBN++VcaWAor9LfeQVv/Yus2+4=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseFlowSequenceEntryMappi
+ ngValue.class
+SHA-256-Digest: 9jKLL4QFRvG6PWl8e5PyrDq16X9z+IKqbUYm1laR2UY=
+
+Name: org/yaml/snakeyaml/tokens/DocumentStartToken.class
+SHA-256-Digest: UCyluVnoCZu6i/PBVSCsb2zNvJ+fc/MnyCYLD7lLHCE=
+
+Name: org/yaml/snakeyaml/tokens/BlockEndToken.class
+SHA-256-Digest: nhfNYxWoCYWzkaVBZtmapO1qt5Vy15Hr8UFkKNSLRn0=
+
+Name: org/yaml/snakeyaml/emitter/Emitter.class
+SHA-256-Digest: Q9TZsk5lHvyC2IdOidFD4uSOAsphnmpUaKBcQoTTrro=
+
+Name: org/yaml/snakeyaml/nodes/ScalarNode.class
+SHA-256-Digest: zGwsrUQMU/aN4yBW5yqrgNlfOHtuDzGH0XlBI/Tdbv0=
+
+Name: org/yaml/snakeyaml/events/StreamEndEvent.class
+SHA-256-Digest: AgGmdxYyKfppnhpJ28GpebN5UFno5OHFBL1KA4tQnsE=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlTime
+ stamp.class
+SHA-256-Digest: He/pqBirdfmCXb311EHl9DNrb+AUeHUjnzK7+0R0pl8=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectFlowMappingValue.class
+SHA-256-Digest: IuGApIseXTF/X/tyFnUwtLaX7qUJpJPqTtlSBG2kbLg=
+
+Name: org/yaml/snakeyaml/tokens/FlowSequenceStartToken.class
+SHA-256-Digest: yRGtEQjWmnyIWLCzptd+JrVHJr9rsT3wCM0TMP6sFW4=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlStr.
+ class
+SHA-256-Digest: 7SaA1agnM27ZhJihGu367YMVHv28Z31NOBHHNckPtaw=
+
+Name: org/yaml/snakeyaml/env/EnvScalarConstructor.class
+SHA-256-Digest: YpxteH2LNpflMJorHspJifCb4kUpxLSM27geuA4CK9g=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructUndefine
+ d.class
+SHA-256-Digest: gvywapEGVP2DpoTjPGdQYPMSnN/JI6tNt7sOItaF/2E=
+
+Name: org/yaml/snakeyaml/serializer/Serializer.class
+SHA-256-Digest: n/2gjG1eDpFF1vG0knMEcKTV4TfzrgGy7NzHIYb7QnE=
+
+Name: org/yaml/snakeyaml/scanner/ScannerException.class
+SHA-256-Digest: d7fL6/eITpPihd7Cv/SUWQ/pg8o373XAXMvIz6sGwqE=
+
+Name: org/yaml/snakeyaml/events/MappingStartEvent.class
+SHA-256-Digest: iPxrku8rM8xpPKEMePJExPy1b05cmeUyobOuj4nHvaA=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseFlowSequenceEntryMappi
+ ngEnd.class
+SHA-256-Digest: PBZQQPybhSZ0ggn9ih6kFsdyeFVKxKySVap47k9dPzo=
+
+Name: org/yaml/snakeyaml/tokens/ScalarToken.class
+SHA-256-Digest: Ml3LzkPnt6f7XmCOChL+IvcIqOk/pLqnR7NdovdAMOA=
+
+Name: org/yaml/snakeyaml/events/CollectionEndEvent.class
+SHA-256-Digest: e38xzQjOjw4hWyicwxbmuLpyyM8kSL+OzJFOeZOYc84=
+
+Name: org/yaml/snakeyaml/introspector/PropertyUtils.class
+SHA-256-Digest: GtLzC+1K8TQba/g6XsSlRlpdudMsbps93got6cwnqPM=
+
+Name: org/yaml/snakeyaml/representer/BaseRepresenter$1.class
+SHA-256-Digest: yx7bZD+EWHIFkUwJyhNn3ciRQlRk1SetVj3p6SPH0uc=
+
+Name: org/yaml/snakeyaml/constructor/Constructor$ConstructScalar.class
+SHA-256-Digest: wTFfuLRKpfQjJ7ghjsL4eRzNZEOhkrNi714r/00AwR8=
+
+Name: org/yaml/snakeyaml/constructor/Construct.class
+SHA-256-Digest: 81pNQSifGneLOARMuoJ1sbbFH/QIlvsX0lJER7xaoms=
+
+Name: org/yaml/snakeyaml/extensions/compactnotation/CompactConstructor
+ $ConstructCompactObject.class
+SHA-256-Digest: qafmSilVTbXzTcYWoFp4CFsP0D+iAmwh6pJ4e3Ym2XM=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseFlowSequenceEntryMappi
+ ngKey.class
+SHA-256-Digest: isR40q09Kr2dl+IvS8B6miPtrkwen0vTMSrlrcEG9yM=
+
+Name: org/yaml/snakeyaml/emitter/Emitable.class
+SHA-256-Digest: AZtEIdr1zbAS+XhhKTonW3Gg7u/as/gcYc++18Q7n7g=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentString.c
+ lass
+SHA-256-Digest: VbTodq+g8Sytny+uEl6DlTx8vr9LE9StG4F1uweBodA=
+
+Name: org/yaml/snakeyaml/tokens/DirectiveToken.class
+SHA-256-Digest: 29Ly+4BuPcdfKi0d0z14s+Bhy7Vxiorng0HC0YT5rtE=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlFloa
+ t.class
+SHA-256-Digest: jEUZvEXkIAYBMwCu7ryea7Zg0f7DqTKOD4cbvUn1f4g=
+
+Name: org/yaml/snakeyaml/tokens/ValueToken.class
+SHA-256-Digest: b5GPaGEvGz6jLMhf+2ZUHwMxL5usmOqHRLt4tlOhtfI=
+
+Name: org/yaml/snakeyaml/env/EnvScalarConstructor$1.class
+SHA-256-Digest: 66kETcQHkRJTM2dMw9vQlhZh2s8x0TacuBk/Lx8zxmE=
+
+Name: org/yaml/snakeyaml/resolver/Resolver$1.class
+SHA-256-Digest: t4kfc5OyU3chrZMPb8jPSjN28XGMp8NYKg60DYLUt/Y=
+
+Name: org/yaml/snakeyaml/constructor/Constructor$ConstructSequence.cla
+ ss
+SHA-256-Digest: Uwf0aR+GorRWovDmmMImoTlqORgmJ/ZbHnsUKrumgng=
+
+Name: org/yaml/snakeyaml/constructor/CustomClassLoaderConstructor.clas
+ s
+SHA-256-Digest: sf0YNIAQ+R+a+M07wa2L8eBIYd7+ZCjAFJ1x9AXW4ZI=
+
+Name: org/yaml/snakeyaml/events/Event.class
+SHA-256-Digest: mXZTgzt5Pd2Q0ko4wEtEeBAYft+z7EEC05eT6Q5fDpY=
+
+Name: org/yaml/snakeyaml/parser/ParserException.class
+SHA-256-Digest: kIo5plVMQZgI7yIQBEbXhkhDY10tuwmwSqLxXZFZTiA=
+
+Name: org/yaml/snakeyaml/reader/ReaderException.class
+SHA-256-Digest: jhnVvG2NSrcgxuWHgvhD+CsX6vUetB13/32aFYhvtfo=
+
+Name: org/yaml/snakeyaml/tokens/FlowEntryToken.class
+SHA-256-Digest: Xyfi1aFdEA76HiuXnVIIgSazGXSoX29RhQdab8Z6ohM=
+
+Name: org/yaml/snakeyaml/tokens/StreamStartToken.class
+SHA-256-Digest: DdussfhZJ92QWcjnjCJaNRkE2cE8CaTAi3FK6RCosZ8=
+
+Name: org/yaml/snakeyaml/DumperOptions$ScalarStyle.class
+SHA-256-Digest: 7McOJzgtIURNHJiosx53/PA+4DEYB8PZSPZnSpgNLLc=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseDocumentContent.class
+SHA-256-Digest: 8tRM2vqxDkuzXDlfw04FYZIgHLTt/iRwQtL1pISQGUI=
+
+Name: org/yaml/snakeyaml/extensions/compactnotation/CompactData.class
+SHA-256-Digest: nIk4OWSJ63LNJlmVT3oj3/KyJhrlxww9VV9tDIqfgE4=
+
+Name: org/yaml/snakeyaml/events/ImplicitTuple.class
+SHA-256-Digest: J1QxZNXsJhXEI5OFJP2hoLBAZuWNOSUbYAIGCpWuhAw=
+
+Name: org/yaml/snakeyaml/tokens/WhitespaceToken.class
+SHA-256-Digest: t7kDNyx6JtBtuqH52YirP8c4PKjX7i94vwvVX7AslaQ=
+
+Name: org/yaml/snakeyaml/constructor/BaseConstructor.class
+SHA-256-Digest: SwSXGD7fFHE+FjBxmomVByOLKTto6y6oR5BqoAeeHm0=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlMap.
+ class
+SHA-256-Digest: 5ykNTnzY+/ZHPnTWkN3+kjXHXnD8DZhip0RhPnD4WI0=
+
+Name: org/yaml/snakeyaml/scanner/Scanner.class
+SHA-256-Digest: Yovb5QgCdWG1Fmp7kLTfLVWkdFfYsThhZnMvWg6Tt4M=
+
+Name: org/yaml/snakeyaml/constructor/Constructor.class
+SHA-256-Digest: zhGyqK6wVkpBHI8S8TPZFclQ5tWHGRDvGR46qtE4fbc=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectFirstFlowSequenceItem.c
+ lass
+SHA-256-Digest: o4r8AhJMFvlawtLv4jnPbHAFeCFc1y4ndMS63eIqQsY=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlNull
+ .class
+SHA-256-Digest: Qq3L87ZDXgOBty4viRHKFpfsBQ85v5vCk1SEyEGSyGA=
+
+Name: org/yaml/snakeyaml/util/ArrayStack.class
+SHA-256-Digest: AwG/JqdTr+ut1YFxkSJFQUbPc3fyQN9v2EadvBf7efk=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter.class
+SHA-256-Digest: 8kdY3SMo6RtSUqOyv8ygbZ8+w9n4FSu+i1lQth0tnnI=
+
+Name: org/yaml/snakeyaml/tokens/DocumentEndToken.class
+SHA-256-Digest: XbSfTA83DuW1ldbll23DrokpMlvQmN8EAw/Vz/N7V5U=
+
+Name: org/yaml/snakeyaml/introspector/MissingProperty.class
+SHA-256-Digest: +aMaziisKiC+71kDutBt9th+r4OHbwM8fW0Xir1E7yE=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseBlockMappingValue.clas
+ s
+SHA-256-Digest: aiOqvW2uUvZC1zcOjZab+R9/Ie6T+kXDXr6xhzwVpq4=
+
+Name: org/yaml/snakeyaml/tokens/TagToken.class
+SHA-256-Digest: 2Yiv8CARBcJxax9muDKdGOXHT+Q6s26MPt7SKm0LpvU=
+
+Name: org/yaml/snakeyaml/nodes/NodeTuple.class
+SHA-256-Digest: 12C/OaesEoYh4Hae+KwSTZZR/2tfoX7aikl+B7ndSag=
+
+Name: org/yaml/snakeyaml/composer/Composer.class
+SHA-256-Digest: XsmD0vcgdlaEXi2pI6nW9sZkzB8IW8tHjSNXE8XX+Qk=
+
+Name: org/yaml/snakeyaml/serializer/SerializerException.class
+SHA-256-Digest: 8YMC+0qcPW58kjNT4CivNG4nw8XLAxfMAmKkGNUj3+E=
+
+Name: org/yaml/snakeyaml/TypeDescription.class
+SHA-256-Digest: k6QFfVnXnIRRFBuBxmFo5cPdE+0biFJXJi/kvtlUc2E=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlBool
+ .class
+SHA-256-Digest: pTXgcB8/dGs9sd1quHm6GvwbYNE5Ht8qtlWEM7dU6WY=
+
+Name: org/yaml/snakeyaml/serializer/AnchorGenerator.class
+SHA-256-Digest: ySZXLicu0vgtjoJDXBsQ2qxU/SbMNWT7uJpfHJVGxBQ=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlInt.
+ class
+SHA-256-Digest: GxJ3FsQ2J4WsOi4858DE983ExMiqpwfRgUFbJLs49ew=
+
+Name: org/yaml/snakeyaml/constructor/BaseConstructor$RecursiveTuple.cl
+ ass
+SHA-256-Digest: hYKY9nI1/PtFeZZOXPg4kbnD5K4WSbn13WOIobbEidg=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectStreamStart.class
+SHA-256-Digest: I+15XNrBx7a1vQCBP3WHRdYdTssNDRlOv225VpVQ3RA=
+
+Name: org/yaml/snakeyaml/events/SequenceEndEvent.class
+SHA-256-Digest: i/0VY31pwvNNOrGtrOpPX1eLi20XGbsJJ7nHdEDnEHM=
+
+Name: org/yaml/snakeyaml/error/MissingEnvironmentVariableException.cla
+ ss
+SHA-256-Digest: TL9yGIIvWH8Do3JS5+NFtEqK33ouixuzlIXTVFmgFuw=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseDocumentEnd.class
+SHA-256-Digest: ojazB0n0essZfL87YcKF5LDUdku7QIToDZ5PH99IFt0=
+
+Name: org/yaml/snakeyaml/events/MappingEndEvent.class
+SHA-256-Digest: PzGA1m9+igdHqLdNJ8Q8PoKbgv+SyL6t5SBv4E9rFp4=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectFlowMappingSimpleValue.
+ class
+SHA-256-Digest: KIKrd1ZtgBwIX7yLt+JLQc65hsB03AykSWXwK6TFAz4=
+
+Name: org/yaml/snakeyaml/scanner/ScannerImpl$Chomping.class
+SHA-256-Digest: 8NMNaUBqzfo4l707zXQux9uGEOIsEJnIKnwcehm449w=
+
+Name: org/yaml/snakeyaml/extensions/compactnotation/PackageCompactCons
+ tructor.class
+SHA-256-Digest: 5ggobxiN32gR53CMzdPm3QcPJfdOI+7NRsJik19xly0=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseBlockSequenceFirstEntr
+ y.class
+SHA-256-Digest: btyj9qNMuJs/W2u/OLSYCVC3Nokt48cwZgL39KpO5io=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentSet.clas
+ s
+SHA-256-Digest: dS77aB6yIlRIO746IKleP+k76+wnopQdB41LhJsTW+s=
+
+Name: org/yaml/snakeyaml/util/ArrayUtils$UnmodifiableArrayList.class
+SHA-256-Digest: 8txpgtg3dxWnMAJ83Y8Ojj0eSVdSmu/uy0bQHvPu0GA=
+
+Name: org/yaml/snakeyaml/Yaml$EventIterable.class
+SHA-256-Digest: jtLfZs+nMaqKWB7rV5bhKHUzKq8p0DSWm0RW/KTzroc=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: PFdiLFImyGrqrTTh7vE7hjvQtyDKQi8BovKzKH5TlUg=
+
+Name: org/yaml/snakeyaml/external/com/google/gdata/util/common/base/Un
+ icodeEscaper$1.class
+SHA-256-Digest: Q2UijW1auQIfGrWerp50ruj+ybLDWJKY9OvvZe4lgEI=
+
+Name: org/yaml/snakeyaml/external/com/google/gdata/util/common/base/Un
+ icodeEscaper.class
+SHA-256-Digest: VlFNZDHdBKzfq2rHngyQKp3XIPcEvyoZ8Sei1/EhMGg=
+
+Name: org/yaml/snakeyaml/tokens/BlockMappingStartToken.class
+SHA-256-Digest: 72JhKb8UbqiQK8FtY2+y/SZ6mmjY0OF2zWKlb8XaVHY=
+
+Name: org/yaml/snakeyaml/error/Mark.class
+SHA-256-Digest: AkvabKw9iK10xgxF96+aPezaZUL+nBB12YQjcLXOKrE=
+
+Name: org/yaml/snakeyaml/events/AliasEvent.class
+SHA-256-Digest: PJYtJOWszPryS6Gm3hDGdrH12mlkKoj5D7w6G1KnUUU=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseFlowMappingValue.class
+SHA-256-Digest: h019l8KW20z5oXH9nfVHRQoAtHFJAn4TIufytvi/VWM=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentPrimitiv
+ eArray.class
+SHA-256-Digest: vrbxNDiT4HvJ99uuTwzLspjqoi7biFrAF9qpsIpByP8=
+
+Name: org/yaml/snakeyaml/util/ArrayUtils$CompositeUnmodifiableArrayLis
+ t.class
+SHA-256-Digest: 2OZ2pT3I/VVHNxH1XDJdcFlkSc4gUk3rR/GiFDQlWsI=
+
+Name: org/yaml/snakeyaml/representer/Represent.class
+SHA-256-Digest: KY6JlAbkg/QxcSfLXM7X6z2vpP3jU/y+e6JNsecTwy8=
+
+Name: org/yaml/snakeyaml/DumperOptions$Version.class
+SHA-256-Digest: Bi2Uj29ogTys4HtPp2XVF5hCKbpNZ3Kw/ij4nqQXCYU=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseFlowSequenceFirstEntry
+ .class
+SHA-256-Digest: 5lBCR2rEJ+3pYBJvjvNXTIY5w9+OVcLttjwraTDAQGc=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentUuid.cla
+ ss
+SHA-256-Digest: 0T8beX7HqBA8v9oAu/xyjzYYZsbHXut9VSfNrbQ7ork=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectFirstBlockSequenceItem.
+ class
+SHA-256-Digest: sh6ZhyuViPC0VLcQEKrPUcJg/NWn6eYTGjw2TSpLFKc=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentByteArra
+ y.class
+SHA-256-Digest: KlDZ12msVoGsV0f4XTa0Nb6Dsd6mBSEwTs2ogwjUhKM=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentDate.cla
+ ss
+SHA-256-Digest: rw/iOVX2JWLSPpoTx8fXp7yXvdpogSqFFjcgOg/REhY=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectNothing.class
+SHA-256-Digest: 62jBS/5dqb9gqujVRaxqiH5ywSJVvB2EbO/6LZVedZ0=
+
+Name: org/yaml/snakeyaml/external/biz/base64Coder/Base64Coder.class
+SHA-256-Digest: H2tP+dep9Mzk66YdKBHpueUZejLvGfdGtO3yDw22hnA=
+
+Name: org/yaml/snakeyaml/introspector/BeanAccess.class
+SHA-256-Digest: m0Mom6ncAxtlHYnYmv4Y7ctOUMjReg5oJbZz9q21lbg=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectFirstFlowMappingKey.cla
+ ss
+SHA-256-Digest: jQsBzATsarxSZJFDKza4JiSs2KpvKacSjf/NcKfC1JM=
+
+Name: org/yaml/snakeyaml/introspector/Property.class
+SHA-256-Digest: fICatjFK9/1f7bvsaqZtbgOtxVy8NOZgaT4dPf9ix2c=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentEnum.cla
+ ss
+SHA-256-Digest: W+kke2TpnrBx0dqOpEFgWAfSfacUgVHPm+FfuPjMkTo=
+
+Name: org/yaml/snakeyaml/events/ScalarEvent.class
+SHA-256-Digest: b/RdRtRoacR0Ad887lYDt5SOAqH7XOxQeE93t45MXXM=
+
+Name: org/yaml/snakeyaml/tokens/StreamEndToken.class
+SHA-256-Digest: lghYm7OI+iDwp9Ol7bQbIzeLhxzroos+rKs9ranhXGk=
+
+Name: org/yaml/snakeyaml/constructor/DuplicateKeyException.class
+SHA-256-Digest: QEspdvDScfovd+3vPS/uqL8t8q1SRHPvo34DH5wrrqU=
+
+Name: org/yaml/snakeyaml/constructor/AbstractConstruct.class
+SHA-256-Digest: yXIoH4UG17yNsgTAQbMjzgN2CWR9mbVUJsA6/I9yx8Y=
+
+Name: org/yaml/snakeyaml/DumperOptions$NonPrintableStyle.class
+SHA-256-Digest: VaQ6YSdpbR65yNoN2TOExg03/rrkWrn1wV2W5We/fdQ=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$1.class
+SHA-256-Digest: Eo7esd8rd1mx/AxSL7+NoXGA5viR/mbgWakM291iEug=
+
+Name: org/yaml/snakeyaml/tokens/AnchorToken.class
+SHA-256-Digest: +ajeUAyQPfSHwrWw0XEsVVyQa96YvRzv8MBW93l6m8I=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentBoolean.
+ class
+SHA-256-Digest: E6kWv2pCyzUGjwqSG+H3odwD5G/dD/kw2DKKfr7/cUs=
+
+Name: org/yaml/snakeyaml/nodes/AnchorNode.class
+SHA-256-Digest: 6gUocMIatlsFhFu/b2hzrbk5MYiswpyeM+BXN1Z0iRQ=
+
+Name: org/yaml/snakeyaml/tokens/FlowMappingStartToken.class
+SHA-256-Digest: k6xre/gTQCMewsJGsVVfRoE5NoTZ4bQeSAPlIcxqMDg=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentArray.cl
+ ass
+SHA-256-Digest: G5ONNF+a7Irxsa2JouK+54vFWtnrb0CkcBvLMTuzuoE=
+
+Name: org/yaml/snakeyaml/scanner/SimpleKey.class
+SHA-256-Digest: H64I0nBmsO92P6b119ZXHS3Aq0V2mjJh24DyZk/lA8o=
+
+Name: org/yaml/snakeyaml/scanner/ScannerImpl.class
+SHA-256-Digest: FNE4a/aPB401LifaqLqV2WJotDarAIqGCNqxRofHdsY=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseDocumentStart.class
+SHA-256-Digest: cZSzr2AVYA1d6zDagAw3zklqxeAH8NxzYuMw0hQm3RM=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectFlowMappingKey.class
+SHA-256-Digest: lx/iYa9y/xIcSET37qOC5sV6bxDCFjpwjUAYGH+FNgI=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectFlowSequenceItem.class
+SHA-256-Digest: 0uTc3D6i49l1o1r31r+oRQ67WTwXKvJLPxCxqb/tpTs=
+
+Name: org/yaml/snakeyaml/representer/Representer$RepresentJavaBean.cla
+ ss
+SHA-256-Digest: N720u45o2S4ecJQ3A0+JNVsnyEsCLWHjlqE1GnD5JiY=
+
+Name: org/yaml/snakeyaml/resolver/Resolver.class
+SHA-256-Digest: 9kvcPMYv0eWKr51ibgIA3oY1lZXxmkDTqmH96RDfoYw=
+
+Name: org/yaml/snakeyaml/Yaml$YamlIterable.class
+SHA-256-Digest: vyo38nQ775zo6lkz66hJo0CEb0XiVi4EzqCdV6H/adM=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseFlowMappingKey.class
+SHA-256-Digest: u51DItI8E70Qnn6p9T0ZOfCaHxdmwgS2ely/hFUalqQ=
+
+Name: org/yaml/snakeyaml/events/StreamStartEvent.class
+SHA-256-Digest: HxaQlsoDGPbwMCEsTTefndO2OgY2eBfWhb+xB6A/v9g=
+
+Name: org/yaml/snakeyaml/external/com/google/gdata/util/common/base/Un
+ icodeEscaper$2.class
+SHA-256-Digest: kNPGh4BkKqjtuP0MGjY60Ok+i3mzIoE2V+dxgujRchU=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$IteratorWrapper.c
+ lass
+SHA-256-Digest: 933o/P4STpSQ+gg0cQ/j1Nd06V6Tnd/uBNFkohHYotc=
+
+Name: org/yaml/snakeyaml/emitter/EmitterException.class
+SHA-256-Digest: DXmIqQXA3m0AqoaTvF3HiyJsNhHLskSwR6bXrAEIP1A=
+
+Name: org/yaml/snakeyaml/Yaml.class
+SHA-256-Digest: AEnGzYkSSMMvDASpnE33L4S9guu9ffUmkYTHAM00i1w=
+
+Name: org/yaml/snakeyaml/representer/Representer.class
+SHA-256-Digest: Uvaa3TyHc4fpFYyZ74Z4ie7TYMH4yM/7lq2C/Ti6PiA=
+
+Name: org/yaml/snakeyaml/events/SequenceStartEvent.class
+SHA-256-Digest: 6QSouh/2c93brqpcieVNooR5gIWsKZbBoUQCrDTkcpM=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlSeq.
+ class
+SHA-256-Digest: fhk6XgBHag2zSFivb5OeKSm8wn8zGOMirr9vPS6zG0w=
+
+Name: org/yaml/snakeyaml/tokens/Token.class
+SHA-256-Digest: pPguIZjfTo6ZG76yHZJ7ptCh0/1Wnt+MvafKl5oMm5M=
+
+Name: org/yaml/snakeyaml/serializer/Serializer$1.class
+SHA-256-Digest: N8VBtCJtp5fx/IZooN8RmK2/ju4y+wTMmrC9k0jZSGM=
+
+Name: org/yaml/snakeyaml/nodes/NodeId.class
+SHA-256-Digest: o4j6zI8chSxja5nR/SVUaS1wa7kyd5cpoZZrXVtPalA=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlSet.
+ class
+SHA-256-Digest: BV7saM0MnDireWIBEu+7zlVLdyCRp/3ty3p77tQ2nC4=
+
+Name: org/yaml/snakeyaml/introspector/PropertySubstitute.class
+SHA-256-Digest: UVl0XuzDpfNX5cJGgCJEFV4qZSK4Mo9lPNjJ7JHG4xE=
+
+Name: org/yaml/snakeyaml/nodes/Node.class
+SHA-256-Digest: w2yjAJRreqJsoVJN+Wj75g/5XWJVmeYHd2/FDsWb9kE=
+
+Name: org/yaml/snakeyaml/events/Event$ID.class
+SHA-256-Digest: MQTAuf5p4Hg2VBK+RW3+l5eFoz1eAoqRmmwHIahdv9I=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$1.class
+SHA-256-Digest: bXzP9BHdTZl9vhAoCF9koBZC5I4KrcQbOKZQm4ugEaw=
+
+Name: org/yaml/snakeyaml/Yaml$1.class
+SHA-256-Digest: zD5uaC/Fo/UaD367hjywWUSCgjBtp0F8NMM6Q1khDdM=
+
+Name: org/yaml/snakeyaml/constructor/SafeConstructor$ConstructYamlBina
+ ry.class
+SHA-256-Digest: wkqnatXUZiM4ODrMG2B3dnyoCWeJkSz/tP8weeqsy2o=
+
+Name: org/yaml/snakeyaml/nodes/MappingNode.class
+SHA-256-Digest: JmpXKmUcKPQmBVRxEeS1wphzJiVnGTEtK+JjmnYSzgE=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentNull.cla
+ ss
+SHA-256-Digest: 3LT4ICfMu7HpZNBPpH9e77beHWzFMWc5sBpdb2WDIDs=
+
+Name: org/yaml/snakeyaml/constructor/ConstructorException.class
+SHA-256-Digest: gHyOz73+YTL0ZxWjspT4PDwsJQYbMBqSwy0VCHn5vGU=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.yaml.snakeyaml/pom.
+ xml
+SHA-256-Digest: zAL1DyRXhCoVejJ+1yVWMYYtknOaAadijsI9curWp/o=
+
+Name: org/yaml/snakeyaml/error/YAMLException.class
+SHA-256-Digest: YB1nTXRxQot4aeWyggqkMZRTw8arSU9N/Apr0gEK3tI=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentIterator
+ .class
+SHA-256-Digest: YP5msSKDOqBnhzKr0reszEvzYR2pPY+P5NjTD+26tjw=
+
+Name: org/yaml/snakeyaml/serializer/NumberAnchorGenerator.class
+SHA-256-Digest: ToRMbBPszu8n6HfsmbER4+lCrYV+jYWIgrEDw8SPpWY=
+
+Name: org/yaml/snakeyaml/parser/VersionTagsTuple.class
+SHA-256-Digest: y4ZdRsutCxkQtSzf99mkewORaYP0Cgjou9n8FdMI+ls=
+
+Name: org/yaml/snakeyaml/DumperOptions$LineBreak.class
+SHA-256-Digest: Zoi/ubiY1vLvlPwaqol9IOPMoRWvcy+FqEqNXza8hYA=
+
+Name: org/yaml/snakeyaml/tokens/AliasToken.class
+SHA-256-Digest: QraD18D2JRG9gCvsNZqPkwzinulvNIc9ihUaZf4Q+ho=
+
+Name: about.html
+SHA-256-Digest: BWT2dM3oswgF8cE9pLVdHtJhBax0lnCQ1a5+5kG+Thc=
+
+Name: org/yaml/snakeyaml/nodes/SequenceNode.class
+SHA-256-Digest: w70G76JqAKzZOEXw6hUd1FcPD2LUo+UW9TddcYxDEEs=
+
+Name: org/yaml/snakeyaml/representer/SafeRepresenter$RepresentMap.clas
+ s
+SHA-256-Digest: BEJT+StXKjSAvrl4Wd69RiUU88T1eCL4kl338Pas9Dw=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectBlockMappingKey.class
+SHA-256-Digest: GiEh6Go3l89JdbrViB8rOTg0c/6Po6RidcRwB6HA4Eg=
+
+Name: org/yaml/snakeyaml/composer/ComposerException.class
+SHA-256-Digest: 01TmxOyBkTCiDExIWBGIlR0Cqgi6dEYMaaepevp0rCs=
+
+Name: org/yaml/snakeyaml/Yaml$2.class
+SHA-256-Digest: fDGbe2Bcz5J0vQRL+lPFamhC2r3yglupwna2hOQxOvc=
+
+Name: org/yaml/snakeyaml/events/DocumentStartEvent.class
+SHA-256-Digest: 0OwIMYOg6rgpb4DauFd9dmKBjHG2Fi9CrjKlXzn0hKE=
+
+Name: org/yaml/snakeyaml/util/UriEncoder.class
+SHA-256-Digest: dH1OpBtgriNF46s6A+Uw5TWyyKOuV11dR5/f3NS8hkY=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseFlowMappingFirstKey.cl
+ ass
+SHA-256-Digest: tdE3PtzUfbU6P5+ILx/ejM+Lbb6magkpPUhYgzvOfDE=
+
+Name: org/yaml/snakeyaml/env/EnvScalarConstructor$ConstructEnv.class
+SHA-256-Digest: kf1J3Q5x1/0JV4QgunlW6K+C81qqR6xwpeAVPGAWbZM=
+
+Name: org/yaml/snakeyaml/parser/ParserImpl$ParseBlockMappingKey.class
+SHA-256-Digest: bkJK6KRqgfThfGkm5VDtSUnx9Oa7WQUc2Q73sAVgeBU=
+
+Name: org/yaml/snakeyaml/parser/Parser.class
+SHA-256-Digest: bzIStR1pCYM9x+wB4sY22Pft2aJe6kng5e0DKuM+dAw=
+
+Name: org/yaml/snakeyaml/error/MarkedYAMLException.class
+SHA-256-Digest: hLjpcJfa/yHdHdtIIg7x6ZLsbaScgazhY0r1Gyd7MsY=
+
+Name: org/yaml/snakeyaml/nodes/CollectionNode.class
+SHA-256-Digest: FztEk0U7pllNYrSgs5AlL1gdhTpRPPTmPP7L/D9Hwaw=
+
+Name: org/yaml/snakeyaml/emitter/Emitter$ExpectDocumentRoot.class
+SHA-256-Digest: wVSuww2xTYA6IuQU8nI11U2QdzyVRNcX3amw+4jBY2Y=
+
+Name: org/yaml/snakeyaml/introspector/GenericProperty.class
+SHA-256-Digest: 2kGImsjrj2qKtS/PM75kmydTV56g7E9iRzD02+RuLSk=
+
+Name: org/yaml/snakeyaml/tokens/BlockEntryToken.class
+SHA-256-Digest: 6Pkl2AILNgsAHa1xiGDyW2mNl6SU55MDKxM4G5TtGHo=
+

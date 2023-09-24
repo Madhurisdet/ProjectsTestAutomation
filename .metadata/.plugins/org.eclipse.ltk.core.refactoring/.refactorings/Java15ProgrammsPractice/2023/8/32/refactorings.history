@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;test.ChTwoNumSum&apos; to &apos;TargetElement&apos;&#x0D;&#x0A;- Original project: &apos;Java15ProgrammsPractice&apos;&#x0D;&#x0A;- Original element: &apos;test.ChTwoNumSum&apos;&#x0D;&#x0A;- Renamed element: &apos;test.TargetElement&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ChTwoNumSum&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;test{ChTwoNumSum.java[ChTwoNumSum" matchStrategy="1" name="TargetElement" qualified="false" references="true" similarDeclarations="false" stamp="1691497931241" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,32 @@
+package programPractice;
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+//1st approach: using String concatination operator
+		/*String str ="Madhuri";
+		String rev="";
+		int len= str.length();
+		for(int i=len-1; i>=0; i--) {
+			rev = rev+str.charAt(i);
+		}
+		System.out.println("Reverse String: "+rev);*/
+
+//2nd approach: using character array:
+	/*String str = "Bhivaji";
+	String rev = "";
+	char a[] =str.toCharArray();
+	 int len=a.length;
+	 for(int i=len-1; i>=0; i--) {
+		rev= rev+a[i];
+	 }
+	 System.out.println("Reverse string:" +rev);*/
+	
+	
+//3rd approach: using stringBuffer class
+		String str = "Waghmode";
+	StringBuffer sb =  new StringBuffer(str);
+	System.out.println(sb.reverse());
+	
+	}
+}

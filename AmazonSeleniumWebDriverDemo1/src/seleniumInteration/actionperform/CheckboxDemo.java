@@ -1,0 +1,41 @@
+package seleniumInteration.actionperform;
+
+import java.time.Duration;
+
+import javax.print.DocFlavor.INPUT_STREAM;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import amazon.test.com.InitializeDriver;
+
+public class CheckboxDemo {
+	public static WebDriver driver;
+	
+	public static void main(String[] args) throws Exception {
+		//initializing driver
+		driver= new InitializeDriver().InitializeDriverMethod("https://www.calculator.net/mortgage-calculator.html");
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
+		driver.manage().window().maximize();
+		WebElement selectcheckbox= driver.findElement(By.xpath("//input[@id='caddoptional']//parent::label//span"));
+		selectcheckbox.click();
+		Thread.sleep(2000);
+		System.out.println(selectcheckbox.isSelected());
+		System.out.println(selectcheckbox.isEnabled());
+		System.out.println(selectcheckbox.isDisplayed());
+		if(selectcheckbox.isSelected()==false) 
+		{
+			selectcheckbox.click();
+			System.out.println("checkbox is selected");
+	
+		}
+		else {
+			System.out.println("checkbox is not selected");
+		}
+		
+	
+	}
+
+}

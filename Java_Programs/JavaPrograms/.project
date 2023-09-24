@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>JavaPrograms</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<variableList>
+		<variable>
+			<name>javaProgram</name>
+			<value>file:/C:/Users/kiran/OneDrive/Documents/Madhuri/java_workspace/Java_Programs</value>
+		</variable>
+	</variableList>
+</projectDescription>

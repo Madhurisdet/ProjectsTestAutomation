@@ -1,0 +1,14 @@
+package test;
+
+public class ArrayDemo {
+
+	public static void main(String[] args) {
+		int a[]=new int[4];
+		a[0]=2;
+		a[1]=4;
+		a[2]=24;
+		a[3]=22;
+		System.out.println(a[2]);
+	}
+
+}

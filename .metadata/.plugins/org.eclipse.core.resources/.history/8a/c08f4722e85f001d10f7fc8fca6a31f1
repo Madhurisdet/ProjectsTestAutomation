@@ -1,0 +1,19 @@
+package test;
+
+
+class Abc
+{
+	int roll_no;
+	String Name;
+	
+}
+public class EncapsulationDemo {
+
+	public static void main(String[] args) {
+	
+		Abc obj = new Abc();
+		obj.Name ="madhuri";
+		obj.roll_no=101;
+	}
+
+}

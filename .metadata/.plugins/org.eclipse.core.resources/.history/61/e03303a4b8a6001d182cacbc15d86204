@@ -1,0 +1,38 @@
+package basePackage;
+
+import java.time.Duration;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import pageFactory.ALLHomePageOptions;
+import pageFactory.AmazonHomePageFactory;
+import pageFactory.HelloSignInAccountHomePage;
+
+public class InitializingDriver {
+	public static WebDriver driver;
+	
+	public static void main(String[] args) throws Exception {
+		 /*String drpdownProdType = "Books";
+		String searchText = "books for kids";
+		String productTitleToSearch = "The Littlest Reindeer (Littlest Series)";
+		String amazonHomepageHeader = "New Releases";*/
+		String emailidh= "madhuri@123gmail.com";
+		
+		driver = new ChromeDriver();
+		driver.get("https://www.amazon.com");
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
+		driver.manage().window().maximize();
+
+		AmazonHomePageFactory amazonhomepageobj = new AmazonHomePageFactory(driver);
+		amazonhomepageobj.allHeadersOfPage();
+		
+		//All Options Click Home Page
+		ALLHomePageOptions allhomepageButton = new ALLHomePageOptions(driver);
+		allhomepageButton.allOptionHomePage();
+		Thread.sleep(2000);
+
+		//Hello SignIn Account Home Page
+		HelloSignInAccountHomePage helloSignInAccObj = new HelloSignInAccountHomePage(driver);
+		helloSignInAccObj.HelloSignInAccount(emailidh);
+	}
+}

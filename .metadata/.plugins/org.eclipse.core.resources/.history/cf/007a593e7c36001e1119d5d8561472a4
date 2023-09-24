@@ -1,0 +1,43 @@
+package test;
+
+public class BestTimeToBuyStock {
+	
+	//ertainly! Here's a Java program that implements the "Best Time to Buy and Sell Stock"
+	//problem, which aims to find the maximum profit that can be obtained by buying and selling a stock given an array of prices:
+
+
+
+	    public static int maxProfit(int[] prices) {
+	        int minPrice = Integer.MAX_VALUE;
+	        int maxProfit = 0;
+
+	        for (int price : prices) {
+	            if (price < minPrice) {
+	                minPrice = price;
+	            } else if (price - minPrice > maxProfit) {
+	                maxProfit = price - minPrice;
+	            }
+	        }
+
+	        return maxProfit;
+	    }
+
+	    public static void main(String[] args) {
+	        int[] prices = {7, 1, 5, 3, 6, 4};
+	        int maxProfit = maxProfit(prices);
+	        System.out.println("Maximum profit: " + maxProfit);
+	    }
+	}
+//	In this program, the maxProfit method takes an array of prices as input and iterates through the array while keeping track of the minimum price encountered so far (minPrice) and the maximum profit that can be obtained (maxProfit). It updates maxProfit whenever a higher profit is found by subtracting the current minimum price from the current price.
+//
+//	The main method demonstrates how to use the maxProfit method by passing an example array of prices and printing the maximum profit that can be obtained.
+//
+//	You can modify the prices array in the main method to test the program with different price datasets. This program has a time complexity of O(n), where n is the number of prices in the input array.
+
+
+
+
+
+
+
+}

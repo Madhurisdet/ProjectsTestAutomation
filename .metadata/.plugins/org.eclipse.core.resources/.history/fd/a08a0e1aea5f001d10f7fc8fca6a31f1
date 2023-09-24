@@ -1,0 +1,39 @@
+package test;
+
+//Encapsulation: Binding data together with methods..i.e. we can use variable data only
+                // through methods.
+
+class Abc
+{
+	
+	private int roll_no;
+	private String name;
+	
+	public int getRoll_no() {
+		return roll_no;
+	}
+	public void setRoll_no(int roll_no) {
+		this.roll_no = roll_no;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}
+public class EncapsulationDemo {
+
+	public static void main(String[] args) {
+	
+		Abc obj = new Abc();
+		obj.setName("Madhuri");
+		obj.setRoll_no(102);
+		
+		
+		System.out.println("Roll_no:"+obj.getRoll_no());
+		System.out.println("Roll_no:"+obj.getName());
+	}
+
+}

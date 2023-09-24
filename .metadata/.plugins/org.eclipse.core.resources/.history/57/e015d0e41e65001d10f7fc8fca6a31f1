@@ -1,0 +1,25 @@
+package registration;
+
+import java.io.IOException;
+
+import com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class LoginServletPage extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+ void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	 String username=request.getParameter("Username");	
+		String password=request.getParameter("Password");
+		
+
+		response.getWriter().append("User Name : "+username);
+		resoonse.getWriter().append("Password : "+password);
+		
+	}
+
+}

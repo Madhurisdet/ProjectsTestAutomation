@@ -1,0 +1,35 @@
+package pageFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+public class AmazonHomePageFactory {
+	WebDriver driver;  //local Variable
+	
+//locators
+	@FindBy(xpath = "//*[@title='Search in']") WebElement searchAlldropdown;
+	
+	@FindBy(id = "twotabsearchtextbox")	WebElement searchTextBox;
+	
+//Constructor
+	public AmazonHomePageFactory(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+//Methods/functionality to implement this class
+	public void searchProducTypeDropdown(String ProducType) 
+	{
+		Select selectdropdownObj = new Select(searchAlldropdown);
+		selectdropdownObj.selectByVisibleText(ProducType);
+	}
+	
+	public void searchTextIntoSearchBox(String ProductName) 
+	{
+		driver.findElement(searchTextBox);
+	}
+	
+}

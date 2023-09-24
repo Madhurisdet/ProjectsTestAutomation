@@ -1,0 +1,23 @@
+package registration;
+
+import java.io.IOException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class LoginServletPage<String> extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+ void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	 String username=request.getParameter("Username");	
+		String password=request.getParameter("Password");
+		
+
+		res.getWriter().append("User Name : "+username);
+		res.getWriter().append("Password : "+password);
+		
+	}
+
+}

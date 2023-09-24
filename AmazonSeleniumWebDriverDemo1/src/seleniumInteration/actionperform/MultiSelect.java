@@ -1,0 +1,63 @@
+package seleniumInteration.actionperform;
+
+import java.time.Duration;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import amazon.test.com.InitializeDriver;
+
+public class MultiSelect {
+	public static WebDriver driver;
+	public static void main(String[] args) throws Exception {
+		
+		String DropDownElement = "Multiple";
+		
+		//initializing driver
+		driver= new InitializeDriver().InitializeDriverMethod("https://demos.devexpress.com/ASPxeditorsDemos/ListEditors/MultiSelect.aspx");
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
+		
+		//xpath for combobox dropdown
+		WebElement selectdropdown =driver.findElement(By.xpath("//img[contains(@id,'ControlOptionsTopHolder')]"));
+		selectdropdown.click();
+		
+		Thread.sleep(2000); 
+		//xpath  for dropdown option
+		WebElement allDropDownOptions =driver.findElement(By.xpath("//table[contains(@id,'SelectionMode')]//td[contains(@class,'dxeListBoxItem_Material')][text()='"+DropDownElement+"']"));
+			allDropDownOptions.click();
+			
+			 
+		//1st approch	
+		Thread.sleep(2000);
+		List<WebElement> allMultiSelectoptions = driver.findElements(By.xpath("//table[@id='ContentHolder_lbFeatures_LBT']//tr[contains(@class,'dxeListBoxItemRow')]//td"));
+		Actions action =new Actions(driver);
+		
+		List<String> ItemsToBeSelect = new LinkedList<>(Arrays.asList("3G","Bluetooth","Touch screen","USB","Voice Dialing"));
+		for(WebElement eachMultiselecttOption:allMultiSelectoptions)
+		{
+			if(ItemsToBeSelect.contains(eachMultiselecttOption.getText()))
+			{
+				action.keyDown(Keys.CONTROL).click(eachMultiselecttOption).build().perform();
+			}
+			
+		}
+		 //2nd approch
+		/*int count=0;
+		for(WebElement eachMultiSelect :allMultiSelectoptions) {	
+			 action.keyDown(Keys.CONTROL).click(eachMultiSelect).build().perform();
+			 count++;
+			 if(count>4) {
+				 break;
+			 }
+			 System.out.println(eachMultiSelect.getText());
+		}*/
+		
+
+	}
+}

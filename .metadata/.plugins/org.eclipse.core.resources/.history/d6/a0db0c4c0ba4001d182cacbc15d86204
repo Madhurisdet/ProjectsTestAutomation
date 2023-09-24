@@ -1,0 +1,28 @@
+package seleniumInteration.actionperform;
+
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import amazon.test.com.InitializeDriver;
+
+public class WindowHandeling {
+	public static WebDriver driver;
+	
+	public static void main(String[] args) {
+		
+		driver = new InitializeDriver().InitializeDriverMethod("https://demoqa.com/browser-windows");
+		driver.findElement(By.id("tabButton")).click();
+		String mainWindow = driver.getWindowHandle();
+		System.out.println(mainWindow);
+		
+		Set<String> allwindows=  driver.getWindowHandles();
+		System.out.println(allwindows);
+		
+
+	}
+
+}

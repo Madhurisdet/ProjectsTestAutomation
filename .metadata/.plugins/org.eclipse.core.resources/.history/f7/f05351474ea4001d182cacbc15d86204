@@ -1,0 +1,51 @@
+package basePackage;
+
+import java.time.Duration;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import pageFactory.AmazonHomePageFactory;
+import utilities.PropertyReadClass;
+
+public class InitializingDriver {
+	public static WebDriver driver;
+	
+	public static void main(String[] args) throws Exception {
+		String drpdownProdType = "Books";
+		String searchText = "books for kids";
+		String productTitleToSearch = "The Littlest Reindeer (Littlest Series)";
+		String amazonHomepageHeader = "Amazon Basics";
+		
+		driver = new ChromeDriver();
+		driver.get("https://www.amazon.com");
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
+		driver.manage().window().maximize();
+
+		AmazonHomePageFactory amazonhomepageobj = new AmazonHomePageFactory(driver);
+		amazonhomepageobj.searchProducTypeDropdown(drpdownProdType);
+		amazonhomepageobj.searchTextIntoSearchBox(searchText);
+		Thread.sleep(2000); 
+		amazonhomepageobj.selectProductfromResult(productTitleToSearch);
+		Thread.sleep(2000);
+		amazonhomepageobj.allHeadersOfPage(amazonHomepageHeader);
+		
+		 
+		PropertyReadClass propertyObj = new PropertyReadClass("src/test/resources/config.properties");
+		System.out.println(propertyObj.readProperty("browser"));
+		System.out.println(propertyObj.readProperty("url"));
+		System.out.println(propertyObj.readProperty("version"));
+		
+		System.out.println("Product Details");
+		List<String> productDetailtitles = new LinkedList<>(Arrays.asList("Publisher","Language","Paperback","ISBN-10","ISBN-13",
+				"Reading age","Lexile measure","Grade level","Item Weight ","Dimensions ‏","Best Sellers Rank"));
+		for(Map.Entry mapobj :prodDetails.ProductDetails(productDetailtitles).entrySet());
+		System.out.println(mapobj.getKey()+"----"+mapobj.getValue());
+		
+	}
+
+}

@@ -1,0 +1,36 @@
+package pageFactory;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ALLHomePageOptions {
+	WebDriver driver;
+	
+//locators
+	@FindBy (xpath = "//a[@id='nav-hamburger-menu']") WebElement allButtonClick;
+	@FindBy(xpath = "//a[@class='hmenu-item']//parent::li") 
+	List<WebElement> allHomepageoption;
+	
+//Constructor
+	public ALLHomePageOptions(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+
+//Method to implement class
+	
+	public void allOptionHomePage() {
+		allButtonClick.click();
+		for(WebElement eachOption : allHomepageoption) {
+			System.out.println(eachOption.getText());
+		}
+	}
+	
+	
+}

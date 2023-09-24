@@ -1,0 +1,12 @@
+package pageFactory;
+
+import org.openqa.selenium.WebDriver;
+
+public class AmazonPageFactoryDemo {
+
+	WebDriver driver;
+	
+	//locators
+	//Constructor
+	//
+}

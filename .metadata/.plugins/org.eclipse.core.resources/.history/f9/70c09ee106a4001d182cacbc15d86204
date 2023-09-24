@@ -1,0 +1,10 @@
+package seleniumInteration.actionperform;
+
+public class WindowHandeling {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

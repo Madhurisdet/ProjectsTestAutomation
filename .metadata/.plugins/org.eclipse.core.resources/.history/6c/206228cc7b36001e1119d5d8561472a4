@@ -1,0 +1,37 @@
+
+package test;
+
+import java.util.Arrays;
+
+//Remove Duplicates from Sorted Array
+
+public class RemoveDuplicateArrayUsingForLoop {
+	
+	
+	
+	public static int removeDuplicateElement(int[] arr)
+	{	int n = arr.length;
+		int j=0;
+		for(int i=0; i<n-1; i++) 
+		{
+			if(arr[i] != arr[i+1])
+			{
+				arr[j] = arr[i];
+				j++;
+		}
+	}
+			arr[j] = arr[n-1];
+			return j;
+} 
+  
+	
+	public static void main(String[] args) {
+	int arr[] = {1,2,3,4,4,5,5};
+	int size = removeDuplicateElement(arr);
+//		for(int i=0; i< size; i++) 
+//		{ 
+//			System.out.println(arr[i]);
+//		}
+	System.out.println(size);
+}
+}

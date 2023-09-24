@@ -1,0 +1,31 @@
+package test;
+
+class Outer
+{
+	int a=3;
+	
+	public void show()
+	{
+		System.out.println("in outer class");
+	}
+	
+	class Inner
+	{
+		int b=1;
+		public void display() 
+		{
+			System.out.println("in inner class ");
+		}
+	}
+}
+public class InnerClassDemo {
+
+	public static void main(String[] args) {
+
+		Outer obj=new Outer();
+		Outer.Inner obj1 = obj.new Inner();
+		obj1.display();
+
+	}
+
+}

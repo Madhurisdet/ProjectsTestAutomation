@@ -1,0 +1,59 @@
+package amazonTest;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FirstSeleniumAmazonDemo {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		String ResultToSearch = "Frigidaire EFRF696-AMZ Upright Freezer 6.5 cu ft Stainless Platinum Design Series";
+		String SearchParameter= "freezer";
+		String DropDownOption = "Appliances";	
+		//Thread.sleep(5000);
+		//long starttime =System.currentTimeMillis();
+		//System.out.println(starttime);
+		WebDriver driver=new ChromeDriver();
+        driver.get("https://www.amazon.com");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
+        driver.findElement(By.xpath("//*[@title='Search in']")).click();
+        List <WebElement> elements=driver.findElements(By.id("searchDropdownBox"));
+        for(WebElement e:elements)
+        	e.getAttribute(DropDownOption);
+        {
+        	//e.getAttribute(SearchParameter);
+        }
+        //driver.findElement(By.xpath("//option[text()='Appliances']")).click();
+         driver.findElement(By.id("twotabsearchtextbox")).sendKeys(SearchParameter);
+        driver.findElement(By.xpath("//input[@id='nav-search-submit-button']")).click();
+        List <WebElement> allTitles = driver.findElements(By.xpath("//div[contains(@data-component-type,'s-search-result')]//h2"));
+        	for(WebElement eachTitle:allTitles) 
+        	{
+        		
+        		 System.out.println(eachTitle.getText());
+        		if(eachTitle.getText().equalsIgnoreCase(ResultToSearch))
+        			{
+        				eachTitle.click();
+        		    }
+        	}
+        //long endtime  =System.currentTimeMillis();
+        //System.out.println(endtime);
+        
+        //long totalTimeDifference = endtime-starttime;
+       // System.out.println("Total Time Difference:" +totalTimeDifference);
+        System.out.println("implicite wait time : " +System.currentTimeMillis());
+       
+         
+        
+        
+        
+		
+	}
+
+}

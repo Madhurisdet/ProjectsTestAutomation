@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;amazonTest.productDetails&apos; to &apos;ProductDetailsPage&apos;&#x0D;&#x0A;- Original project: &apos;FirstSeleniumAmazon&apos;&#x0D;&#x0A;- Original element: &apos;amazonTest.productDetails&apos;&#x0D;&#x0A;- Renamed element: &apos;amazonTest.ProductDetailsPage&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;productDetails&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;amazonTest{productDetails.java[productDetails" matchStrategy="1" name="ProductDetailsPage" qualified="false" references="true" similarDeclarations="false" stamp="1674462553419" textual="false" version="1.0"/>
+</session>

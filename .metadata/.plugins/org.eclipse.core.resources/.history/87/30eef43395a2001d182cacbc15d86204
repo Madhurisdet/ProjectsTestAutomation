@@ -1,0 +1,30 @@
+package seleniumInteration.actionperform;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import amazon.test.com.InitializeDriver;
+
+public class DragAndDropElementsOrImage {
+	public static WebDriver driver;
+	
+	public static void main(String[] args) {
+		
+		driver = new InitializeDriver().InitializeDriverMethod("https://www.globalsqa.com/demo-site/draganddrop/");
+		
+		WebElement iframeLazyload = driver.findElement(By.xpath("//*[@class='demo-frame lazyloaded']"));
+		List <WebElement> allSourceImages = driver.findElements(By.xpath("//*[@id='gallery']//img"));
+		WebElement destinationtrash = driver.findElement(By.id("trash"));
+		Actions actionobj = new Actions(driver);
+		for(WebElement eachImage : allSourceImages)
+		{
+			actionobj.clickAndHold(eachImage).moveToElement(destinationtrash).release().build().perform();
+		}
+		
+	}
+
+}

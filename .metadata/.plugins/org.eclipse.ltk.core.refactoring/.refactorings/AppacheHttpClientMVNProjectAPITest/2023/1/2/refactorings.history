@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ApacheHttpClientBookAPI&apos; to &apos;GetApacheHttpClientBookAPI&apos;&#x0D;&#x0A;- Original project: &apos;AppacheHttpClientMVNProjectAPITest&apos;&#x0D;&#x0A;- Original element: &apos;ApacheHttpClientBookAPI&apos;&#x0D;&#x0A;- Renamed element: &apos;GetApacheHttpClientBookAPI&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ApacheHttpClientBookAPI&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;{ApacheHttpClientBookAPI.java[ApacheHttpClientBookAPI" matchStrategy="1" name="GetApacheHttpClientBookAPI" qualified="false" references="true" similarDeclarations="false" stamp="1673168404288" textual="false" version="1.0"/>
+</session>

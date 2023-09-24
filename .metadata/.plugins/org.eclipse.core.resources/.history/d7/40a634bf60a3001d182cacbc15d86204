@@ -1,0 +1,30 @@
+package basePackage;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import pageFactory.AmazonHomePageFactory;
+import utilities.PropertyReadClass;
+
+public class InitializingDriver {
+	public static WebDriver driver;
+	
+	public static void main(String[] args) throws Exception {
+		String dtopdownProdType = "Books";
+		String searchText = "books for kids";
+		
+		driver = new ChromeDriver();
+
+		AmazonHomePageFactory amazonhomepageobj = new AmazonHomePageFactory(driver);
+		amazonhomepageobj.searchProducTypeDropdown(dtopdownProdType);
+		amazonhomepageobj.searchTextIntoSearchBox(searchText);
+		
+		PropertyReadClass propertyObj = new PropertyReadClass("src/test/resources/config.properties");
+		System.out.println(propertyObj.readProperty("browser"));
+		System.out.println(propertyObj.readProperty("url"));
+		System.out.println(propertyObj.readProperty("version"));
+	}
+
+}
